@@ -11,9 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script>
         window.$docsify = {
-            name: 'My Docs',
-            loadSidebar: true,
-            subMaxLevel: 2
+            name: 'My GitBook',
+            loadSidebar: true,  // 启用侧边栏
+            loadNavbar: false,   // 如果不需要导航栏，可以设为 false
+            subMaxLevel: 2,      // 目录层级
+            alias: {
+                '/README.md': '/docs-2/README.md'  // 设置默认主页指向 /doc2/README.md
+            }
         };
     </script>
 </body>
